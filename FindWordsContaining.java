@@ -1,4 +1,10 @@
+/**
+ * @author Alon Filler
+ */
 public class FindWordsContaining {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         String letter = args[args.length - 1];
 
@@ -8,7 +14,9 @@ public class FindWordsContaining {
         }
         for (int i = 0; i < args.length - 1; i++) {
             String currentWord = args[i];
-            if (currentWord.contains(letter)) System.out.println(currentWord);
+            if (currentWord.contains(letter)) {
+                System.out.println(currentWord);
+            }
         }
-    }    
+    }
 }

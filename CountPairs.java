@@ -1,4 +1,11 @@
+/**
+ * @author Alon Filler
+ */
+
 public class CountPairs {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         int count = 0;
         int target = Integer.valueOf(args[args.length - 1]);
@@ -12,7 +19,9 @@ public class CountPairs {
             for (int j = i + 1; j < args.length - 1; j++) {
                 int firstNumber = Integer.valueOf(args[i]);
                 int secondNumber = Integer.valueOf(args[j]);
-                if (firstNumber + secondNumber < target) count++;
+                if (firstNumber + secondNumber < target) {
+                    count++;
+                }
             }
         }
         System.out.println(count);
